@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>UI/UX APP</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="gilangaramadan">
+  <meta name="description" content="Piktochart UI Developer Test">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <script src="assets/components/modernizr.js"></script>
+
+</head>
+<body class="editor-page">
+
+<div class="full-width">
+
+  <!--Menu Header-->
+  <nav class="navbar row justify-around align-center">
+    <div class="cell two small-four">
+      <div class="app-name">
+        <span class="sprite logo-big"></span>
+      </div>
+    </div>
+    <div class="cell eight small-six">
+      <div class="doc-title">
+        <span class="sprite sign-edit"></span> Projects Name Here Sir
+      </div>
+    </div>
+    <div class="cell two small-two">
+
+      <div class="user-profile">
+        <div class="dropdown">
+          <span class="user-notif" data-badge="5">
+            <img src="assets/img/avatar.png" alt="">
+          </span>
+          <span class="sprite arrow-bottom"></span>
+          <div class="dropdown-content">
+            <div class="profile-card top">
+              <div class="user-info">
+                <div class="row">
+                  <div class="cell">
+                    <img src="assets/img/avatar.png" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="cell">
+                    <h5>Sir Loras Tyrell</h5>
+                    <span class="user-email">
+                      margaerysismysister@westeros.com
+                    </span>
+                    <div class="clear"></div>
+                    <a href="#" class="button btn-clear">Setting</a>
+                  </div>
+                </div>
+              </div>
+              <div class="user-menu">
+                <ul>
+                  <li>
+                    <span class="sprite profile-notification"></span>
+                    Notifications
+                    <span class="float-right badge" data-badge="5"></span>
+                  </li>
+                  <li><span class="sprite profile-upgrade"></span> Upgrade plans</li>
+                  <li><span class="sprite profile-tutorial"></span> Tutorials</li>
+                  <li><span class="sprite profile-help"></span> Help</li>
+                </ul>
+              </div>
+              <div class="user-action">
+                SIGN OUT
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Content-->
+  <div class="row">
+    <!--Menu Left-->
+    <div class="cell two left-menu">
+      <div class="tab">
+        <input id="tab-one" type="checkbox" name="tabs">
+        <label class="tools" for="tab-one">TOOLS SELECTION</label>
+        <div class="tab-content">
+          <div class="row justify-around align-center">
+            <div class="cell five opt-menu tools-selection">
+              <span class="sprite tool-text"></span>
+              <div class="clear"></div>
+              Text
+            </div>
+            <div class="cell five opt-menu tools-selection">
+              <span class="sprite tool-frame-art"></span>
+              <div class="clear"></div>
+              Frame Art
+            </div>
+          </div>
+          <div class="row justify-around align-center">
+            <div class="cell five opt-menu tools-selection">
+              <span class="sprite tool-phone-case"></span>
+              <div class="clear"></div>
+              Phone Case
+            </div>
+            <div class="cell five opt-menu tools-selection">
+              <span class="sprite tool-pillow"></span>
+              <div class="clear"></div>
+              Pillow
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <input id="tab-two" type="checkbox" name="tabs">
+        <label class="tools" for="tab-two">PRODUCT OPTIONS</label>
+        <div class="tab-content">
+          <div class="row">
+            <div class="cell product-opt">
+              <div class="product-section">
+                <p class="float-left"><strong>Caption</strong></p>
+                <p class="float-right text-right">(89/900)</p>
+                <div class="clear"></div>
+                <textarea name="caption-text" id="" rows="4"></textarea>
+              </div>
+              <div class="product-section">
+                <p class="float-left"><strong>Book Size</strong></p>
+                <div class="clear"></div>
+                <span class="separator">
+                    <input type="radio" name="book_size" value="12x24" checked="checked"/><label>12 x 24</label>
+                    <input type="radio" name="book_size" value="24x48"/><label>24 x 48</label>
+                    <div class="clear"></div>
+                  </span>
+                <span class="separator">
+                    <input type="radio" name="book_size" value="36x12"/><label>36 x 12</label>
+                    <input type="radio" name="book_size" value="62x36"/><label>62 x 36</label>
+                    <div class="clear"></div>
+                  </span>
+              </div>
+              <div class="product-section">
+                <p class="float-left"><strong>Paper Weight</strong></p>
+                <div class="clear"></div>
+                <span class="separator">
+                    <input type="radio" name="paper_wight" value="15" checked="checked"/><label>15 grams</label>
+                    <input type="radio" name="paper_wight" value="22"/><label>22 grams</label>
+                    <div class="clear"></div>
+                  </span>
+                <span class="separator">
+                    <input type="radio" name="paper_wight" value="26"/><label style="margin-right: 7px">26 grams</label>
+                    <input type="radio" name="paper_wight" value="32"/><label>32 grams</label>
+                    <div class="clear"></div>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <input id="tab-three" type="checkbox" name="tabs">
+        <label class="tools" for="tab-three">CHOOSE PHOTOS</label>
+        <div class="tab-content">
+          <div class="row justify-around align-center">
+            <div class="cell four opt-menu photo-source">
+              <span class="sprite facebook"></span>
+            </div>
+            <div class="cell four opt-menu photo-source">
+              <span class="sprite instagram"></span>
+            </div>
+            <div class="cell four opt-menu photo-source">
+              <span class="sprite upload"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell opt-menu photo-upload">
+              <p>Upload your own photos or design</p>
+              <a href="#" class="button btn-browse">BROWSE PHOTO</a>
+              <p class="text-small">Only image files (JPG, PNG) with max. 12MB</p>
+            </div>
+          </div>
+          <div class="row justify-around align-center">
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+          </div>
+          <div class="row justify-around align-center">
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+          </div>
+          <div class="row justify-around align-center">
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+          </div>
+          <div class="row justify-around align-center">
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+            <div class="cell four opt-menu photo-source">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Draw Area-->
+    <div class="draw-area">
+      <div id="output-text">
+        <p>Hello world!</p>
+        <p>@gilangaramadan</p>
+      </div>
+    </div>
+
+    <!--Menu Right-->
+    <div class="cell right-menu">
+      <h5>Font</h5>
+      <div class="select-style select-font">
+        <select onchange="changeFont(this);">
+          <option value="Arial" selected="selected">Arial</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Open Sans">Open Sans</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+      </div>
+      <div class="select-style select-size">
+        <select onchange="changeFontSize(this);">
+          <option value="48" selected="selected">48 px</option>
+          <option value="64">64 px</option>
+          <option value="72">72 px</option>
+          <option value="96">96 px</option>
+        </select>
+      </div>
+      <div class="clear"></div>
+      <div class="row section-space justify-start align-center">
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeFontWeight("bold")'><span class="sprite editor-text-bold"></span></a>
+        </div>
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeFontStyle("italic")'><span class="sprite editor-text-italic"></span></a>
+        </div>
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeFontDecor("underline")'><span class="sprite editor-text-underline"></span></a>
+        </div>
+      </div>
+      <div class="row section-space justify-start align-center">
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeTextAlign("left")'><span class="sprite editor-align-left"></span></a>
+        </div>
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeTextAlign("center")'><span class="sprite editor-align-center"></span></a>
+        </div>
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeTextAlign("right")'><span class="sprite editor-align-right"></span></a>
+        </div>
+        <div class="cell one select-style format-text">
+          <a href="#" onclick='changeTextAlign("justify")'><span class="sprite editor-align-justify"></span></a>
+        </div>
+        <div class="select-style select-leading">
+          <select onchange="changeLeading(this);">
+            <option value="50" selected="selected">50%</option>
+            <option value="100">100%</option>
+            <option value="120">120%</option>
+            <option value="150">150%</option>
+            <option value="200">200%</option>
+          </select>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+      <h5>Style</h5>
+      <div class="range-opacity">
+        <span class="float-left">Opacity</span> <input class="float-right" type="range" id="rangeOpacity" max="1"
+                                                       min="0" step="0.01" onchange="changeOpacity(this.value);">
+        <div class="clear"></div>
+      </div>
+      <div class="select-style select-opacity">
+        <input type="number" id="numberOpacity" max="1" min="0" step="0.01" onchange="changeOpacity(this.value);">
+      </div>
+      <div class="clear"></div>
+
+      <h5>Font Colour</h5>
+      <div class="color-picker">
+        <span class="float-left" style="margin-top: 10px;">HEX #</span>
+        <span id="color-selected" class="select-style color-selected float-right">
+          <div class="row">
+            <div class="cell one color-set color-item-6"></div>
+            <div class="cell one">F58A6D</div>
+          </div>
+        </span>
+      </div>
+      <div class="clear"></div>
+      <div class="row justify-around align-center" style="margin-bottom: 2px;">
+        <div class="cell one color-set color-item-1"></div>
+        <div class="cell one color-set color-item-2"></div>
+        <div class="cell one color-set color-item-3"></div>
+        <div class="cell one color-set color-item-4"></div>
+        <div class="cell one color-set color-item-5"></div>
+        <div class="cell one color-set color-item-6"></div>
+        <div class="cell one color-set color-item-7"></div>
+        <div class="cell one color-set color-item-8"></div>
+        <div class="cell one color-set color-item-9"></div>
+      </div>
+      <div class="row justify-around align-center">
+        <div class="cell one color-set color-item-a"></div>
+        <div class="cell one color-set color-item-b"></div>
+        <div class="cell one color-set color-item-c"></div>
+        <div class="cell one color-set color-item-d"></div>
+        <div class="cell one color-set color-item-3"></div>
+        <div class="cell one color-set color-item-f"></div>
+        <div class="cell one color-set color-item-g"></div>
+        <div class="cell one color-set color-item-h"></div>
+        <div class="cell one color-set color-item-i"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>

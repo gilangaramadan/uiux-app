@@ -1,0 +1,146 @@
+%bg-sprite {
+  background-image: url('#{$sprite-path}');
+  background-repeat: no-repeat;
+  background-size: 160px 448px;
+}
+
+.sprite {
+  @extend %bg-sprite;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  &.facebook {
+    @include sprite-custom(2, 0, 32);
+    &:after {
+      content: "Facebook";
+      position: absolute;
+      top: 45px;
+      right: auto;
+      left: 10px;
+    }
+    &:hover {
+      color: $white;
+      @include sprite-custom(3, 0, 32);
+    }
+  }
+  &.instagram {
+    @include sprite-custom(2, 1, 32);
+    &:after {
+      content: "Instagram";
+      position: absolute;
+      top: 45px;
+      right: auto;
+      left: 76px;
+    }
+    &:hover {
+      color: $white;
+      @include sprite-custom(3, 1, 32);
+    }
+  }
+  &.upload {
+    @include sprite-custom(2, 2, 32);
+    &:after {
+      content: "Upload";
+      position: absolute;
+      top: 45px;
+      right: auto;
+      left: 151px;
+    }
+    &:hover {
+      color: $white;
+      @include sprite-custom(3, 2, 32);
+    }
+  }
+  &.logo-small {
+    @include sprite-custom(2, 3, 32);
+  }
+  &.editor-text-bold {
+    @include sprite-custom(2, 4, 32);
+  }
+  &.editor-text-underline {
+    @include sprite-custom(2, 5, 32);
+  }
+  &.editor-text-italic {
+    @include sprite-custom(2, 6, 32);
+  }
+  &.editor-align-left {
+    @include sprite-custom(2, 7, 32);
+  }
+  &.editor-align-center {
+    @include sprite-custom(2, 8, 32);
+  }
+  &.editor-align-right {
+    @include sprite-custom(2, 9, 32);
+  }
+  &.editor-align-justify {
+    @include sprite-custom(2, 10, 32);
+  }
+  &.editor-text-leading {
+    @include sprite-custom(2, 11, 32);
+  }
+  &.profile-help {
+    @include sprite-custom(4, 0, 32);
+  }
+  &.profile-notification {
+    @include sprite-custom(4, 1, 32);
+  }
+  &.profile-upgrade {
+    @include sprite-custom(4, 2, 32);
+  }
+  &.profile-tutorial {
+    @include sprite-custom(4, 3, 32);
+  }
+  &.arrow-bottom {
+    @include sprite-custom(4, 4, 32);
+  }
+  &.arrow-right {
+    @include sprite-custom(4, 5, 32);
+  }
+  &.sign-close {
+    @include sprite-custom(4, 6, 32);
+  }
+  &.sign-edit {
+    @include sprite-custom(4, 7, 32);
+  }
+  &.tool-text {
+    @include sprite-custom(0, 0, 64);
+  }
+  &.tool-frame-art {
+    @include sprite-custom(0, 1, 64);
+  }
+  &.tool-phone-case {
+    @include sprite-custom(0, 2, 64);
+  }
+  &.tool-pillow {
+    @include sprite-custom(0, 3, 64);
+  }
+  &.logo-big {
+    @include sprite-custom(0, 4, 64);
+  }
+  &.fish {
+    @include sprite-custom(0, 5, 64);
+  }
+  &.burger {
+    @include sprite-custom(0, 6, 64);
+  }
+
+}
+
+//Handle Retina Display
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+
+  .sprite,
+  input[type=checkbox] + label::after,
+  .select-style.select-font::after,
+  .select-style.select-size::after,
+  .select-style.select-leading::before {
+    background-image: url('#{$sprite-2x-path}');
+  }
+}
+

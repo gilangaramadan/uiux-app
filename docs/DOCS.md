@@ -118,7 +118,7 @@ Add new tasks to either the default `grunt` task or `grunt build` task at the en
  * Run `grunt` on the command line
  */
 grunt.registerTask('default', [
-  'sass:dev',
+  compass,
   'cssmin:dev',
   'bower:dev',
   'autoprefixer:dev',

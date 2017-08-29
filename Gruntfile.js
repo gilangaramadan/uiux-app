@@ -160,12 +160,13 @@ module.exports = function(grunt) {
 
     /**
      * Compile Sass/SCSS files
-     * https://github.com/gruntjs/grunt-contrib-sass
+     * https://github.com/gruntjs/grunt-contrib-compass
      * Compiles all Sass/SCSS files and appends project banner
      */
     sass: {
       dev: {
         options: {
+          compass: true,
           style: 'expanded'
         },
         files: {
@@ -174,6 +175,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
+          compass: true,
           style: 'expanded'
         },
         files: {
@@ -184,7 +186,7 @@ module.exports = function(grunt) {
 
     /**
      * Autoprefixer
-     * Adds vendor prefixes automatically
+     * Adds custom prefixes automatically
      * https://github.com/nDmitry/grunt-autoprefixer
      */
     autoprefixer: {
