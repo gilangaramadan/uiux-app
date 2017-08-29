@@ -3,6 +3,12 @@
 This app based on [FireShell Boilerplate](http://github.com/toddmotto/fireshell) and [Thimble CSS Framework](https://github.com/agileleague/thimblecss)
 Simple interface for UI/UX editor, contains two pages of html files.
 
+**Choose the options**
+![Choose the options](https://user-images.githubusercontent.com/6009256/29808110-e96ec538-8cc0-11e7-84fa-1a3c8e7efd44.png)
+
+**Editor page**
+![Editor](https://user-images.githubusercontent.com/6009256/29808172-30f7c0c6-8cc1-11e7-9196-5a4f88ab23d4.png)
+
 ## Documentation
 
 Read the developer [documentation](//github.com/toddmotto/fireshell/blob/master/docs/DOCS.md) on FireShell for further reading and learning. You may need to install a few assets before you can get started, such as Node, Git, Grunt.
